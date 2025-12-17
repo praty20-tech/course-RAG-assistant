@@ -7,18 +7,18 @@ This system ingests course PDFs, constructs a dense vector index using Sentence-
 ## Key Features
 
 **PDF Ingestion & Chunking:** Efficiently parses and segments course documents.
-**Semantic Retrieval:** Uses all-MiniLM-L6-v2 (Sentence-BERT) and FAISS for fast, dense vector search.
-**Hybrid Search Capable:** Designed with robust retrieval logic supporting both BM25 (keyword) and Dense (semantic) search, merged via Reciprocal Rank Fusion (RRF).
-**End-to-End Pipeline:** Handling the full lifecycle from raw data to LLM inference
-**Grounded Answers:** Answers are based only on retrieved context, minimizing hallucinations.
-**Interactive UI:** Clean, user-friendly interface built with Streamlit.
+* **Semantic Retrieval:** Uses all-MiniLM-L6-v2 (Sentence-BERT) and FAISS for fast, dense vector search.
+* **Hybrid Search Capable:** Designed with robust retrieval logic supporting both BM25 (keyword) and Dense (semantic) search, merged via Reciprocal Rank Fusion (RRF).
+* **End-to-End Pipeline:** Handling the full lifecycle from raw data to LLM inference
+* **Grounded Answers:** Answers are based only on retrieved context, minimizing hallucinations.
+* **Interactive UI:** Clean, user-friendly interface built with Streamlit.
 
 ## Tech Stack
 
 **Language:** Python 3.10+
-**Retrieval:** Sentence-transformers (SBERT), FAISS, Rank-BM25
-**Generation (LLM):** Groq API (LLaMA 3.1) 
-**Data Processing:** PyPDF2, NLTK
+* **Retrieval:** Sentence-transformers (SBERT), FAISS, Rank-BM25
+* **Generation (LLM):** Groq API (LLaMA 3.1) 
+* **Data Processing:** PyPDF2, NLTK
 
 ## Repository Structure
 

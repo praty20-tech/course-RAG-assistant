@@ -78,10 +78,11 @@ python src/embed_index.py
 5. Run the Application
 You can run the pipeline directly in the terminal for testing:
 
-Bash
+```Bash
 python -m src.pipeline
+```
 Or launch the full interactive web interface:
 
-Bash
-
+```Bash
 streamlit run app/streamlit_app.py
+```

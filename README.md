@@ -44,22 +44,22 @@ RAG/
 ├── .env                        # Example environment variables file
 ├── requirements.txt            # Dependencies
 └── README.md                   # Project documentation
+```
 Setup and Usage
 1. Installation
 Clone the repository and install dependencies:
 
-Bash
-
+```bash
 git clone <repo_url>
 cd RAG
 pip install -r requirements.txt
-
+```
 2. Configuration
 Create a .env file in the root directory and add your API key:
-
+```.env
 GROQ_API_KEY=gsk_your_key_here
 # Optional: OPENAI_API_KEY=sk_...
-
+```
 3. Add Data
 Place your course PDFs (lecture notes, slides, textbooks) into the data folder:
 
@@ -68,19 +68,17 @@ RAG/data/
 4. Build the Index
 Run the ingestion and embedding scripts to prepare your data:
 
-Bash
-
+```Bash
 # Step 1: Extract text and chunk documents
 python src/ingest.py
 
 # Step 2: Generate embeddings and build FAISS index
 python src/embed_index.py
-
+```
 5. Run the Application
 You can run the pipeline directly in the terminal for testing:
 
 Bash
-
 python -m src.pipeline
 Or launch the full interactive web interface:
 
